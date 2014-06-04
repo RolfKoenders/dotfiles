@@ -1,0 +1,11 @@
+[user]
+	name = Rolf Koenders
+    email = rolf@icemobile.com
+[push]
+    default = current
+[alias]
+    co = checkout
+    br = branch
+    st = status
+    ci = commit
+    do = push
