@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="prose"
 
-alias zshconfig="atom ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias bp="cd ~/Documents/dev-boxes/bright-portal"
 
 #Load aliases from file
