@@ -18,4 +18,5 @@ set history=1000
 set nobackup
 set noswapfile
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-e> :NERDTreeToggle<CR>
+
