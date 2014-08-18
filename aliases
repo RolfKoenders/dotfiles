@@ -9,3 +9,10 @@ alias gd='git diff '
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+
+# Forever aliases
+alias fl='forever list'
+alias fr='forever restart'
+alias fra='forever restartall'
+alias fs='forever stop'
+alias fsa='forever stopall'
