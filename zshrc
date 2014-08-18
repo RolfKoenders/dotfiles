@@ -12,7 +12,7 @@ if [ -f ~/.aliases ]; then
     source $HOME/.aliases
 fi
 
-plugins=(git git-extras jira npm history history-substring vagrant)
+plugins=(git git-extras jira npm history history-substring vagrant forever)
 
 source $ZSH/oh-my-zsh.sh
 
