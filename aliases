@@ -1,4 +1,5 @@
 alias psaux='ps aux'
+alias tailf='tail -f '
 
 # Git aliases
 alias gs='git status '
