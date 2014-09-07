@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="prose"
+ZSH_THEME="Soliah"
 
 alias zshconfig="vim ~/.zshrc"
 alias bp="cd ~/Documents/dev-boxes/bright-portal"
