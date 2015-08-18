@@ -12,13 +12,23 @@ if [ -f ~/.aliases ]; then
     source $HOME/.aliases
 fi
 
-plugins=(git git-extras jira npm history history-substring vagrant forever)
+plugins=(docker git git-extras npm history history-substring vagrant forever nvm)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH=$PATH:$HOME/Documents/packer/
+
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # ssh
 if [ -f ~/.ssh/id_rsa ]; then
     ssh-add ~/.ssh/id_rsa
 fi
+
+source /home/rolf/.rvm/scripts/rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias alias="echo 'Too bad my friend!:-)'" 
+
+export EDITOR=vim

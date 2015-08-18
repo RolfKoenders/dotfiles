@@ -2,7 +2,9 @@ execute pathogen#infect()
 execute pathogen#helptags()
 filetype plugin indent on
 
-syntax on
+syntax enable
+set background=light
+colorscheme solarized
 
 set guifont=Inconsolata\ 16
 set laststatus=2
@@ -24,3 +26,4 @@ autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
