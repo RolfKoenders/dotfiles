@@ -2,7 +2,9 @@ execute pathogen#infect()
 execute pathogen#helptags()
 filetype plugin indent on
 
-syntax on
+syntax enable
+set background=light
+colorscheme solarized
 
 set guifont=Inconsolata\ 16
 set laststatus=2
