@@ -3,23 +3,22 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'junegunn/vim-github-dashboard'
 Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/seoul256.vim'
 
 call plug#end()
 
 " Config
 syntax enable
-set t_Co=16
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized
+set background=dark
+let g:seoul256_background = 236
+colo seoul256
 
 set guifont=Inconsolata\ 16
 set laststatus=2
