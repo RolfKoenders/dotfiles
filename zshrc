@@ -17,7 +17,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 # Load secret env vars
-source .secrets
+source $HOME/dotfiles/.secrets
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
