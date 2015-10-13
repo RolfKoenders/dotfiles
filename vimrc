@@ -1,3 +1,5 @@
+set nocompatible
+
 " vim-plug
 call plug#begin()
 
@@ -36,7 +38,12 @@ set noswapfile
 
 " Keybinds
 let mapleader=","
-map <C-e> :NERDTreeToggle<CR>
+" map <C-e> :NERDTreeToggle<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
