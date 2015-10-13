@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="Soliah"
 
 # ZSH Config
-plugins=(docker git git-extras npm history history-substring vagrant forever nvm)
+plugins=(docker git git-extras npm history history-substring vagrant forever nvm jira)
 source $ZSH/oh-my-zsh.sh
 
 # Default editor
