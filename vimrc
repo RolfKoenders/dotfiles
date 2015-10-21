@@ -14,6 +14,7 @@ Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 call plug#end()
 
@@ -39,7 +40,7 @@ set noswapfile
 
 " Keybinds
 let mapleader=","
-" map <C-e> :NERDTreeToggle<CR>
+let g:NumberToggleTrigger="<C-n>"
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
