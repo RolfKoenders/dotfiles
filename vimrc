@@ -13,6 +13,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
@@ -44,6 +45,7 @@ nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <leader>G :Goyo<CR>
 
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
