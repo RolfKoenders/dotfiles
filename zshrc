@@ -10,6 +10,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Default editor
 export EDITOR=vim
+# Set Term to support colors in Tmux
+export TERM=xterm-256color
+# Tmuxp
+export DISABLE_AUTO_TITLE="true"
 
 #Load aliases from file
 if [ -f ~/.aliases ]; then
@@ -20,7 +24,7 @@ fi
 source $HOME/dotfiles/.secrets
 
 # PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/rolf/bin"
 
 # NVM
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
@@ -29,9 +33,13 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source /home/rolf/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Powerline
+source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+
 # ssh
 if [ -f ~/.ssh/id_rsa ]; then
     ssh-add ~/.ssh/id_rsa
+    clear
 fi
 
 # Fuck!

@@ -15,15 +15,17 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'FredKSchott/CoVim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
 " Config
 syntax enable
 set background=dark
-let g:seoul256_background = 236
 colo seoul256
 
+set term=screen-256color
 set guifont=Inconsolata\ 16
 set laststatus=2
 set tabstop=4

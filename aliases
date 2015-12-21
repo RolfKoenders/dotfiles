@@ -38,7 +38,7 @@ alias dki="docker run -i -t -P"
 # Execute interactive container, e.g., $dex base /bin/bash
 alias dex="docker exec -i -t"
 # Stop all containers
-dstop() { docker stop $(docker ps -a -q); }
+dstop() { docker stop --time=0 $(docker ps -a -q); }
 # Remove all containers
 drm() { docker rm $(docker ps -a -q); }
 # Stop and Remove all containers
@@ -49,3 +49,8 @@ dri() { docker rmi $(docker images -q); }
 dbu() { docker build -t=$1 .; }
 # Show all alias related docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+# Docker compose build & up
+alias dcbu="docker-compose build && docker-compose up"
+
+# TaskWarrior
+alias tl="task list"
