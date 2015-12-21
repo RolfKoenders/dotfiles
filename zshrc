@@ -24,13 +24,13 @@ fi
 source $HOME/dotfiles/.secrets
 
 # PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/rolf/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin"
 
 # NVM
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # RVM
-source /home/rolf/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Powerline
