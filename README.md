@@ -3,7 +3,7 @@
 # My . files
 In here you find my setup of dotfiles. Zsh config and plugins, vim setup and so on.
 
-*I'm using [Ubuntu](http://www.ubuntu.com/) for my development machines, u may have to do some manual actions like installing packages and installing fonts.*
+*I'm using [Ubuntu](http://www.ubuntu.com/) for my development machines. On other operating systems u may have to do some manual actions like installing packages and installing fonts.*
 
 
 ## Setup
