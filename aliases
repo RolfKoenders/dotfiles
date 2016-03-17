@@ -51,6 +51,17 @@ dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 # Docker compose build & up
 alias dcbu="docker-compose build && docker-compose up"
+# Configure docker-machine env on osx
+alias ds="eval \"$(docker-machine env default)\""
+alias dip="docker-machine ip default | pbcopy"
 
 # TaskWarrior
 alias tl="task list"
+
+# Kitchen
+alias kcr='kitchen create'
+alias kde='kitchen destroy'
+alias kco='kitchen converge'
+alias kli='kitchen list'
+alias klo='kitchen login'
+alias kve='kitchen verify'

@@ -34,7 +34,7 @@ source ~/.rvm/scripts/rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Powerline
-source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+source /Users/$USER/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # ssh
 if [ -f ~/.ssh/id_rsa ]; then

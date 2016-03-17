@@ -15,7 +15,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
-Plug 'FredKSchott/CoVim'
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
