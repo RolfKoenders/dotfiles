@@ -23,6 +23,7 @@ fi
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 # Add users bin folder to path
 if [ -e ~/bin ]; then
 	export PATH="$PATH:~/bin"

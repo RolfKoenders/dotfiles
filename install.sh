@@ -13,9 +13,9 @@ fi
 
 if [ "$(uname)" == "Darwin" ]; then
 	## Running on OSX"
-	source install/osx/initial-osx.sh
+	# source install/osx/initial-osx.sh
 	source install/osx/configuration.sh
-	source install/nvm.sh
+	source install/osx/nvm.sh
 fi;
 
 clear
