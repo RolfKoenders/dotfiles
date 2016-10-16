@@ -7,26 +7,24 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'altercation/vim-colors-solarized'
-" Plug 'itchyny/lightline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/seoul256.vim'
-" Plug 'junegunn/goyo.vim'
-" Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'sheerun/vim-polyglot'
 Plug 'dracula/vim'
 call plug#end()
 
-" Config
-" syntax on
-" color dracula
-" colorscheme onedark
+syntax on
+color dracula
+let g:airline_theme='murmur' " vim-airline theme
 
-"set term=screen-256color
-set guifont=Inconsolata\ 16
+set guifont=Monaco\ 14
 set laststatus=2
 set tabstop=4
 set shiftwidth=4
@@ -42,12 +40,12 @@ set noswapfile
 
 " make backspace behave in a sane manner
 set backspace=indent,eol,start
-
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " Keybinds
 let mapleader=","
+let g:NumberToggleTrigger="<C-n>"
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :CtrlP<CR>
 map <Leader>l <Plug>(easymotion-lineforward)
