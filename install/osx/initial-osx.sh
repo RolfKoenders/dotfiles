@@ -17,6 +17,7 @@ brew install tree
 brew install wget
 
 # Development tools
+brew install vim
 brew install git
 brew install hub
 brew install tmux
@@ -25,3 +26,4 @@ brew install nvm
 brew install markdown
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
+brew install awscli

@@ -23,5 +23,5 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 #Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
-echo "Kill affected applications"
+echo "Restart affected applications"
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
