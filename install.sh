@@ -9,6 +9,7 @@ dist=`grep DISTRIB_ID /etc/*-release | awk -F '=' '{print $2}'`
 if [ "$dist" == "Ubuntu" ]; then
 	# Running on ubuntu
 	source install/ubuntu/initial-ubuntu.sh
+    source install/ubuntu/install-fonts-ubuntu.sh
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
