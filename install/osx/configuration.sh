@@ -6,7 +6,7 @@ echo -e "\n\nSetting OS X settings"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # show hidden files by default
-defaults write com.apple.Finder AppleShowAllFiles -bool false
+defaults write com.apple.Finder AppleShowAllFiles -bool true
 
 # only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4

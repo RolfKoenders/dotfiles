@@ -21,5 +21,3 @@ brew install nvm
 brew install markdown
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
-
-exit 0
