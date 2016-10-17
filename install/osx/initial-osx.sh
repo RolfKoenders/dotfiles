@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo "Cloning Dracula iTerm theme"
+git clone https://github.com/dracula/iterm.git ~/iterm/themes
+echo -e "\n\nImport the theme in iTerm\n\n"
+
 if test ! $(which brew); then
 	echo "Installing homebrew"
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -7,12 +11,12 @@ fi
 
 echo -e "\n\nInstalling homebrew packages..."
 
-# cli tools
+# Cli tools
 brew install ack
 brew install tree
 brew install wget
 
-# development tools
+# Development tools
 brew install git
 brew install hub
 brew install tmux
