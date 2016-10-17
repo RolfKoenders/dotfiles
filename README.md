@@ -1,33 +1,59 @@
-![Dotfiles logo](/images/dotfiles-logo.png?raw=true)
 
-# My . files
-In here you find my setup of dotfiles. Zsh config and plugins, vim setup and so on.
+# My . files 💁
+This is my setup to be productive on MacOS and Ubuntu. Its a collection of configuration for `zsh`, `tmux`, `vim` and what i like to have on my systems.
 
-*I'm using [Ubuntu](http://www.ubuntu.com/) for my development machines. On other operating systems u may have to do some manual actions like installing packages and installing fonts.*
+## Whats in it?
+All fine but tell me whats in it!
 
+#### Configuration for
+	- zsh
+	- tmux
+	- vim
+
+#### Packages
+It will install [brew](http://brew.sh/) if not already installed and the following packages:
+- ack
+- awscli
+- tree
+- git
+- hub
+- markdown
+- nvm
+- tmux
+- vim
+- wget
+- zsh
+- zsh-syntax-highlighting
+- zsh-autosuggestions
+
+#### Color schemes/themes
+I really like the [Dracula](https://draculatheme.com) theme, so you get it in my Vim setup and it check out the [Dracula iTerm theme](https://draculatheme.com/iterm/) which you can import if you like it.
+
+#### System configuration
+I also started to add some MacOS system configuration i like to have. Checkout the `install/osx/configuration.sh` file for on that.
 
 ## Setup
-I'm still figuring out what is the best way to setup my new dev machines with all my tools and configuration. But for now these are the steps to set it up!
+You like it? To start using this setup follow these steps:
 
-### 1) **~/**
-Start by cloning this repo in your home folder.
+### Backup!
+Although the install script will backup your current dotfiles it is always a good idea to make backup of your configuration files and store them somewhere (in a git repo for example) so you always have them ready. **it will not delete or overwrite any of your current dotfiles which are not backuped** You can find your backuped files at `~/dotfiles_backup`.
 
-### 2) Install Apps & Plugins
-By running the `install.sh` script it will install the following tools and plugins:
+### Installation
+If on OSX, you will need to install the XCode CLI tools before continuing. Run the following to install these:
+```bash
+$ xcode-select --install
+```
 
-- [Zsh](http://www.zsh.org/)
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Tmux](https://tmux.github.io/)
-- [Tmuxp](https://github.com/tony/tmuxp)
-- [Powerline](https://github.com/powerline/powerline)
-- [Vim](http://www.vim.org/)
-- [Pip](https://pypi.python.org/pypi/pip)
-- [Aws-cli](https://aws.amazon.com/cli/)
+Then, clone the dotfiles repository to your computer. This can be placed anywhere, and symbolic links will be created to reference it from your home directory.
 
-### 3) Link dotfiles
-By running the `setup-dotfiles.sh` script it will move your current dotfiles (only the ones mentioned in the script) to a folder called `dotfiles_old` as a backup. Next it will create symlinks to these ones.
+```bash
+git clone https://github.com/RolfKoenders/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./install.sh
+```
 
-### 4) Install custom fonts
-Powerline requires a [symbol font](https://powerline.readthedocs.org/en/latest/installation.html#fonts-installation). Run the `install-fonts-ubuntu.sh` script to download and install the fonts. To refresh your font-cache it will ask for your sudo password.
+#### iTerm theme
+The Dracula iTerm theme is cloned at `~/iTerm/themes/dracula`. Go to your profile in iTerm settings and import it.
 
-It will also install the `ancient-fonts` package for Emoji support :smile:
+### Enjoy!
+Enjoy and be productive!

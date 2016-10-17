@@ -4,28 +4,28 @@ set nocompatible
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'altercation/vim-colors-solarized'
-Plug 'itchyny/lightline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/goyo.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
-
+Plug 'sheerun/vim-polyglot'
+Plug 'dracula/vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
-" Config
-syntax enable
-set background=dark
-colo seoul256
+syntax on
+color dracula
+let g:airline_theme='murmur' " vim-airline theme
 
-set term=screen-256color
-set guifont=Inconsolata\ 16
+set guifont=Monaco\ 14
 set laststatus=2
 set tabstop=4
 set shiftwidth=4
@@ -39,20 +39,17 @@ set history=1000
 set nobackup
 set noswapfile
 
+" make backspace behave in a sane manner
+set backspace=indent,eol,start
+" highlight conflicts
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 " Keybinds
 let mapleader=","
 let g:NumberToggleTrigger="<C-n>"
-nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
 nnoremap <leader>t :CtrlP<CR>
-nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
-nnoremap <leader>G :Goyo<CR>
 map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
