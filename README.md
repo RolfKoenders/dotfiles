@@ -10,7 +10,7 @@ All fine but tell me whats in it!
 	- tmux
 	- vim
 
-#### Packages i like to have installed
+#### Packages
 It will install [brew](http://brew.sh/) if not already installed and the following packages:
 - ack
 - awscli
