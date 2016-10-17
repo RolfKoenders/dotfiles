@@ -18,6 +18,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
 Plug 'dracula/vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 syntax on
