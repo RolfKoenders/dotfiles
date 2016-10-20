@@ -1,0 +1,44 @@
+# # Packages
+brew 'ack'
+brew 'tree'
+brew 'wget'
+# brew 'vim'
+brew 'git'
+brew 'hub'
+brew 'tmux'
+brew 'zsh'
+brew 'nvm'
+brew 'markdown'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'awscli'
+brew 'watch'
+brew 'reattach-to-user-namespace'
+
+# Casks
+cask_args appdir: '/Applications'
+tap 'caskroom/cask'
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'virtualbox'
+cask 'atom'
+cask 'spotify'
+cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'spectacle'
+
+# App Store Apps
+brew 'mas'
+mas 'lastpass', id: 926036361
+mas 'Evernote', id: 406056744
+mas 'iA Writer', id: 775737590
+mas '1Password', id: 443987910
+mas 'Xcode', id: 497799835
+mas 'Wunderlist', id: 410628904
+mas 'Slack', id: 803453959
+mas 'Dash', id: 449589707
