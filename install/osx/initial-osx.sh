@@ -2,28 +2,21 @@
 
 echo "Cloning Dracula iTerm theme"
 git clone https://github.com/dracula/iterm.git ~/iterm/themes
-echo -e "\n\nImport the theme in iTerm\n\n"
+echo -e "\nDracula theme cloned, import the theme in iTerm\n"
 
 if test ! $(which brew); then
 	echo "Installing homebrew"
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo -e "\n\nInstalling homebrew packages..."
+echo -e "\nInstalling homebrew bundle"
 
-# Cli tools
-brew install ack
-brew install tree
-brew install wget
+# Install bundle https://github.com/Homebrew/homebrew-bundle
+brew install bundle
 
-# Development tools
-brew install vim
-brew install git
-brew install hub
-brew install tmux
-brew install zsh
-brew install nvm
-brew install markdown
-brew install zsh-syntax-highlighting
-brew install zsh-autosuggestions
-brew install awscli
+# Go to location of Brewfile and run brew bundle
+cd ~/dotfiles/install/osx
+brew bundle
+
+# Cd back to previous directory
+cd -
