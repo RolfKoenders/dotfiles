@@ -11,20 +11,7 @@ All fine but tell me whats in it!
 	- vim
 
 #### Packages
-It will install [brew](http://brew.sh/) if not already installed and the following packages:
-- ack
-- awscli
-- tree
-- git
-- hub
-- markdown
-- nvm
-- tmux
-- vim
-- wget
-- zsh
-- zsh-syntax-highlighting
-- zsh-autosuggestions
+It will install [brew](http://brew.sh/) and some packages. Checkout the [Brewfile](https://github.com/RolfKoenders/dotfiles/blob/master/install/osx/Brewfile) to see which packages will be installed. 
 
 #### Color schemes/themes
 I really like the [Dracula](https://draculatheme.com) theme, so you get it in my Vim setup and it check out the [Dracula iTerm theme](https://draculatheme.com/iterm/) which you can import if you like it.
