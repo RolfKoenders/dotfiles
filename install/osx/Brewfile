@@ -32,6 +32,7 @@ cask 'spotify'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'spectacle'
 cask 'flux'
+cask 'alfred'
 
 # App Store Apps
 brew 'mas'
