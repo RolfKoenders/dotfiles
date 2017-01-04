@@ -34,6 +34,7 @@ cask 'spectacle'
 cask 'flux'
 cask 'alfred'
 cask 'keepingyouawake'
+cask 'filezilla'
 
 # App Store Apps
 brew 'mas'
