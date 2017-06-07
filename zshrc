@@ -40,3 +40,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 if [ -f ~/.ssh/id_rsa ]; then
 	ssh-add ~/.ssh/id_rsa
 fi
+
+# yarn
+export PATH="$PATH:`yarn global bin`"
