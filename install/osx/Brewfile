@@ -36,6 +36,7 @@ cask 'alfred'
 cask 'keepingyouawake'
 cask 'filezilla'
 cask 'visual-studio-code'
+cask 'hyper'
 
 # App Store Apps
 brew 'mas'
