@@ -44,7 +44,6 @@ brew 'mas'
 mas 'lastpass', id: 926036361
 mas 'Evernote', id: 406056744
 mas 'iA Writer', id: 775737590
-mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835
 mas 'Wunderlist', id: 410628904
 mas 'Slack', id: 803453959
