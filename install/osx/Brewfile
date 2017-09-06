@@ -38,6 +38,7 @@ cask 'keepingyouawake'
 cask 'filezilla'
 cask 'visual-studio-code'
 cask 'hyper'
+cask 'insomnia'
 
 # App Store Apps
 brew 'mas'
