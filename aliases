@@ -1,6 +1,6 @@
 # General aliases
 alias psaux='ps aux'
-alias tailf='tail -f '
+alias tailf='tail -f'
 alias zshconfig="vim ~/.zshrc"
 
 # Kill all the tabs in Chrome to free up memory

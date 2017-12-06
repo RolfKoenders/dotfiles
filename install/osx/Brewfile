@@ -15,6 +15,8 @@ brew 'awscli'
 brew 'watch'
 brew 'reattach-to-user-namespace'
 brew 'lastpass-cli'
+brew 'httpie'
+brew 'kubernetes-helm'
 
 # Casks
 cask_args appdir: '/Applications'
@@ -28,7 +30,6 @@ cask 'betterzipql'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'virtualbox'
-cask 'atom'
 cask 'spotify'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'spectacle'
@@ -36,13 +37,15 @@ cask 'flux'
 cask 'alfred'
 cask 'keepingyouawake'
 cask 'filezilla'
+cask 'visual-studio-code'
+cask 'hyper'
+cask 'insomnia'
 
 # App Store Apps
 brew 'mas'
 mas 'lastpass', id: 926036361
 mas 'Evernote', id: 406056744
 mas 'iA Writer', id: 775737590
-mas '1Password', id: 443987910
 mas 'Xcode', id: 497799835
 mas 'Wunderlist', id: 410628904
 mas 'Slack', id: 803453959

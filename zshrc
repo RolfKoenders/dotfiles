@@ -38,6 +38,7 @@ fi
 
 # export GOPATH=$HOME/.go
 # export PATH="$PATH:$GOPATH"
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # export ANDROID_HOME=$HOME/Android/Sdk
 # export PATH=$PATH:$ANDROID_HOME/tools
