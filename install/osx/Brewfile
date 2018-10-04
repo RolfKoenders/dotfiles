@@ -39,6 +39,10 @@ cask 'postman'
 cask 'slack'
 cask 'robo-3t'
 
+# Font
+tap caskroom/fonts
+cask 'font-fira-code'
+
 # App Store Apps
 brew 'mas'
 mas 'lastpass', id: 926036361
