@@ -1,4 +1,4 @@
-# # Packages
+# Packages
 brew 'ack'
 brew 'tree'
 brew 'wget'
@@ -16,7 +16,9 @@ brew 'watch'
 brew 'reattach-to-user-namespace'
 brew 'lastpass-cli'
 brew 'httpie'
+brew 'kubectl'
 brew 'kubernetes-helm'
+brew 'jq'
 
 # Casks
 cask_args appdir: '/Applications'
@@ -26,20 +28,16 @@ cask 'qlstephen'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'betterzipql'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'virtualbox'
 cask 'spotify'
-cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'spectacle'
-cask 'flux'
 cask 'alfred'
-cask 'keepingyouawake'
-cask 'filezilla'
 cask 'visual-studio-code'
-cask 'hyper'
-cask 'insomnia'
+cask 'postman'
+cask 'slack'
+cask 'robo-3t'
 
 # App Store Apps
 brew 'mas'
@@ -50,3 +48,4 @@ mas 'Xcode', id: 497799835
 mas 'Wunderlist', id: 410628904
 mas 'Slack', id: 803453959
 mas 'Dash', id: 449589707
+mas '1Password', id: 1333542190
