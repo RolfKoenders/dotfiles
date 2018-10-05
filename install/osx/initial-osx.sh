@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# echo "Cloning Dracula iTerm theme"
-# git clone https://github.com/dracula/iterm.git ~/iterm/themes
-# echo -e "\nDracula theme cloned, import the theme in iTerm\n"
-
 if : $(xcode-select -p); then
 	echo "Xcode command line tools are installed. Skipping step."
 else
