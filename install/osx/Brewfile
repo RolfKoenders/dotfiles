@@ -19,6 +19,7 @@ brew 'httpie'
 brew 'kubectl'
 brew 'kubernetes-helm'
 brew 'jq'
+brew 'wifi-password'
 
 # Casks
 cask_args appdir: '/Applications'
