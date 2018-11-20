@@ -20,6 +20,8 @@ brew 'kubectl'
 brew 'kubernetes-helm'
 brew 'jq'
 brew 'wifi-password'
+brew 'bat'
+brew 'ripgrep'
 
 # Casks
 cask_args appdir: '/Applications'
