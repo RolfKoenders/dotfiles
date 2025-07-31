@@ -1,46 +1,40 @@
+# My Dotfiles 💁
 
-# My . files 💁
-This is my setup to be productive on MacOS and Ubuntu. Its a collection of configuration for `zsh`, `tmux`, `vim` and what i like to have on my systems.
+This repository contains my personal dotfiles for my Fedora development environment, running on a Framework 13 laptop. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage and symlink these configuration files.
 
-## Whats in it?
-All fine but tell me whats in it!
+## Overview
 
-#### Configuration for
-	- zsh
-	- tmux
-	- vim
+### Shell: Zsh
 
-#### Packages
-It will install [brew](http://brew.sh/) and some packages. Checkout the [Brewfile](https://github.com/RolfKoenders/dotfiles/blob/master/install/osx/Brewfile) to see which packages will be installed. 
+- **Prompt:** Uses [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a fast, customizable prompt with instant prompt support.
+- **Plugin Manager:** [zinit](https://github.com/zdharma-continuum/zinit) is used to manage plugins and snippets.
+- **Plugins:**
+  - Syntax highlighting (`zsh-users/zsh-syntax-highlighting`)
+  - Command completions (`zsh-users/zsh-completions`)
+  - Autosuggestions (`zsh-users/zsh-autosuggestions`)
+  - FZF tab completion (`Aloxaf/fzf-tab`)
+- **Snippets:** Loads Oh My Zsh plugins for `git`, `sudo`, and `command-not-found`.
+- **Completions:** Customizes completion styles and integrates with FZF and zoxide.
+- **Keybindings:** Emacs-style keybindings, with history search on `Ctrl+p`/`Ctrl+n`.
+- **History:** Large, deduplicated, and shared shell history with several options for better usability.
+- **Aliases:** Common command aliases for convenience (see `aliases` file for more).
+- **Integrations:** 
+  - [fzf](https://github.com/junegunn/fzf) for fuzzy finding
+  - [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter directory jumping
+  - [fnm](https://github.com/Schniz/fnm) for fast Node.js version management (if installed)
 
-#### Color schemes/themes
-I really like the [Dracula](https://draculatheme.com) theme, so you get it in my Vim setup and it check out the [Dracula iTerm theme](https://draculatheme.com/iterm/) which you can import if you like it.
+## Usage
 
-#### System configuration
-I also started to add some MacOS system configuration i like to have. Checkout the `install/osx/configuration.sh` file for on that.
+Clone this repository and use GNU Stow to symlink the dotfiles into your home directory:
 
-## Setup
-You like it? To start using this setup follow these steps:
-
-### Backup!
-Although the install script will backup your current dotfiles it is always a good idea to make backup of your configuration files and store them somewhere (in a git repo for example) so you always have them ready. **it will not delete or overwrite any of your current dotfiles which are not backuped** You can find your backuped files at `~/dotfiles_backup`.
-
-### Installation
-If on OSX, you will need to install the XCode CLI tools before continuing. Run the following to install these:
-```bash
-$ xcode-select --install
+```sh
+stow .
 ```
 
-Then, clone the dotfiles repository to your computer. This can be placed anywhere, and symbolic links will be created to reference it from your home directory.
+## My Hardware
 
-```bash
-git clone https://github.com/RolfKoenders/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-./install.sh
-```
+- **Laptop:** Framework 13
+- **OS:** Fedora Linux
 
-#### iTerm theme
-The Dracula iTerm theme is cloned at `~/iTerm/themes/dracula`. Go to your profile in iTerm settings and import it.
-
-### Enjoy!
-Enjoy and be productive!
+---
+Feel free to explore and adapt these configs for your own

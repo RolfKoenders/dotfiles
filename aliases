@@ -3,15 +3,6 @@ alias psaux='ps aux'
 alias tailf='tail -f'
 alias zshconfig="vim ~/.zshrc"
 
-# Kill all the tabs in Chrome to free up memory
-# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
-alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
-
-# Helpers
-alias grep='grep --color=auto'
-alias df='df -h' # disk free, in Gigabytes, not bytes
-alias du='du -h -c' # calculate disk usage for a folder
-
 # Filesystem aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -61,17 +52,3 @@ dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 alias dcbu="docker-compose build && docker-compose up"
 # TaskWarrior
 alias tl="task list"
-
-# Kitchen
-alias kcr='kitchen create'
-alias kde='kitchen destroy'
-alias kco='kitchen converge'
-alias kli='kitchen list'
-alias klo='kitchen login'
-alias kve='kitchen verify'
-
-# tmux aliases
-alias ta='tmux attach'
-alias tls='tmux ls'
-alias tat='tmux attach -t'
-alias tns='tmux new-session -s'

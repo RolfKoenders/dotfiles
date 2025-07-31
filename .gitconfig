@@ -3,9 +3,4 @@
     email = post@madebyrolf.nl
 [push]
     default = current
-[alias]
-    co = checkout
-    br = branch
-    st = status
-    ci = commit
-    pu = push
+
