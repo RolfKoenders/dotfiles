@@ -33,8 +33,8 @@ stow .
 
 ## My Hardware
 
-- **Laptop:** Framework 13
-- **OS:** Fedora Linux
+- **Laptop:** Framework 13 with [this configuration](https://frame.work/nl/en/share-my-laptop?token=0331df68adf)
+- **Current OS:** Fedora Linux
 
 ---
 Feel free to explore and adapt these configs for your own
