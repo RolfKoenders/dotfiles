@@ -2,6 +2,7 @@
 alias psaux='ps aux'
 alias tailf='tail -f'
 alias zshconfig="vim ~/.zshrc"
+alias ports='netstat -tulanp' # Show open ports
 
 # Filesystem aliases
 alias ..='cd ..'
@@ -18,6 +19,7 @@ alias gd='git diff '
 alias got='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias stashrebase='git stash save && git fetch && git rebase origin master && git stash apply'
 
 # Docker
 # Get latest container ID
