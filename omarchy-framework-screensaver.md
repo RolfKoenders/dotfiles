@@ -6,3 +6,4 @@ If you want the framework logo as the screen saver on omarchy. Take the contents
 $ cp assets/framework-logo.txt ~/.local/share/omarchy/logo.txt
 ```
 
+source: https://x.com/FrameworkPuter/status/1956488252015464889
