@@ -36,5 +36,9 @@ stow .
 - **Laptop:** Framework 13 with [this configuration](https://frame.work/nl/en/share-my-laptop?token=0331df68adf)
 - **Current OS:** Arch Linux (Omarchy)
 
+## Other
+
+- [Omarchy framework logo screensaver](./omarchy-framework-screensaver.md)
+
 ---
 Feel free to explore and adapt these configs for your own
