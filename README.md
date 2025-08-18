@@ -1,6 +1,6 @@
 # My Dotfiles 💁
 
-This repository contains my personal dotfiles for my Fedora development environment, running on a Framework 13 laptop. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage and symlink these configuration files.
+This repository contains my personal dotfiles, running on a Framework 13 laptop. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage and symlink these configuration files.
 
 ## Overview
 
