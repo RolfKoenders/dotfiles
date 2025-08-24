@@ -62,6 +62,11 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+# ----- shared aliases from dotfiles -----
+if [[ -r "$HOME/dotfiles/aliasses" ]]; then
+  source "$HOME/dotfiles/aliasses"
+fi
+
 alias ls="ls --color"
 alias c="clear"
 alias zshconfig="vim ~/.zshrc"
