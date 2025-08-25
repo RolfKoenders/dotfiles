@@ -52,5 +52,3 @@ dbu() { docker build -t=$1 .; }
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 # Docker compose build & up
 alias dcbu="docker-compose build && docker-compose up"
-# TaskWarrior
-alias tl="task list"
