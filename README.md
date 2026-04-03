@@ -1,6 +1,6 @@
 # My Dotfiles 💁
 
-This repository contains my personal dotfiles, running on a Framework 13 laptop. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage and symlink these configuration files.
+This repository contains my personal dotfiles, running on a Framework 13 laptop. Symlinks are managed manually (e.g. `ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf`).
 
 ## Overview
 
@@ -23,12 +23,36 @@ This repository contains my personal dotfiles, running on a Framework 13 laptop.
   - [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter directory jumping
   - [fnm](https://github.com/Schniz/fnm) for fast Node.js version management (if installed)
 
+### Terminal Multiplexer: tmux
+
+- **Theme:** [Catppuccin](https://github.com/catppuccin/tmux) (mocha flavor)
+- **Plugin Manager:** [TPM](https://github.com/tmux-plugins/tpm)
+- **Plugins:**
+  - `tmux-sensible` — sane defaults
+  - `tmux-cpu` — CPU usage in status bar
+  - `tmux-battery` — battery status in status bar
+  - `tmux-yank` — system clipboard integration
+- **Keybindings:** Vim-style pane navigation, `|`/`-` for splits
+
 ## Usage
 
-Clone this repository and use GNU Stow to symlink the dotfiles into your home directory:
+Clone this repository and symlink the files you need:
 
 ```sh
-stow .
+git clone https://github.com/rolfv/dotfiles ~/dotfiles
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+```
+
+### tmux
+
+After symlinking, install TPM and plugins:
+
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux
+# Then press: prefix + I  (capital i) to install plugins
 ```
 
 ## My Hardware
